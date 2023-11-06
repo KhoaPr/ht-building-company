@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    li::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent; /* Tạo một phần tam giác ở phía trên */
+  border-left: 10px solid #000; /* Tạo phần tam giác ở phía bên trái */
+  border-bottom: 5px solid transparent; /* Tạo một phần tam giác ở phía dưới */
+  margin-right: 5px; /* Thêm khoảng cách giữa tam giác và nội dung li */
+}
+
+ul {
+  list-style-type: none; /* Ẩn kiểu danh sách mặc định */
+}
+
+}
+
+.news{
+  grid-template-columns: 0%;
+  grid-template-rows: 0%;
+}
+
+
+.calendar{
+    width: 60px;
+}
+
+
+.imgnews{
+    transition: transform 0.8s;
+}
+.imgnews:hover{
+    transform: scale(1.1);
+}
+
